@@ -22,7 +22,6 @@ features, labels = synthetic_data(true_w, true_b, 10)
 
 print(f"features:{features}\n labels:{labels}")
 
-
 '''
 1。python yield这里的话 相当于是一个迭代器， 每一次调用data——iter就返回下一个对象
 2。然后这里的代码我重写了
