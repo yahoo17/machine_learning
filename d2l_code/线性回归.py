@@ -18,7 +18,7 @@ def synthetic_data(w, b, num_examples):  # @save
     return X, y.reshape((-1, 1))
 
 
-true_w = torch.tensor([2.,2.])
+true_w = torch.tensor([2.,-3.4])
 true_b = 4.2
 features, labels = synthetic_data(true_w, true_b, 10)
 
@@ -92,5 +92,5 @@ for epoch in range(num_epochs):
             print(f"epoch{epoch+1}, loss:{float(train_l.mean()):f}")
 
 
-print(f"w的估计误差：{true_w - w.reshape(true_w.shape)}")
-print(f"b的估计误差：{true_b - b}")
+print(f"我们估计的w：{w},实际的w：{w} ，w的估计误差：{true_w - w.reshape(true_w.shape)}")
+print(f"我们估计的b：{b},实际的b：{b}, b的估计误差：{true_b - b}")
