@@ -17,7 +17,7 @@ def synthetic_data(w, b, num_examples):  # @save
 
 
 true_w = torch.tensor([2.,-3.4])
-true_b = 4.2
+true_b = 4.
 features, labels = synthetic_data(true_w, true_b, 10)
 
 print(f"features:{features}\n labels:{labels}")
