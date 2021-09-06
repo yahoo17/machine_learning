@@ -48,6 +48,7 @@ def data_iter(batch_size, features, labels):
 # labels = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
+
 for x, y in data_iter(3, features, labels):
     print(x, '\n', y)
 
