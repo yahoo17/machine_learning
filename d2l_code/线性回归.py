@@ -2,7 +2,11 @@ import numpy as np
 import torch
 from d2l import torch as d2l
 
-
+# 对于每一个小批量，我们会进行以下步骤:
+#
+# 通过调用net(X)生成预测并计算损失l（正向传播）。
+# 通过进行反向传播来计算梯度。
+# 通过调用优化器来更新模型参数。
 def synthetic_data(w, b, num_examples):  # @save
     """生成 y = Xw + b + 噪声。"""
     X = torch.normal(0, 1, (num_examples, len(w)))
