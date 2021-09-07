@@ -39,4 +39,18 @@ commut
 
 A * (B*C) = (A*B) * C
 
+A  *  I   = I  *  A = A
+m n  n n   m m  m n 
 
+
+feature scale 
+x1 (0~2000)
+x2 (0~5)
+
+x1/2000 x2/5
+
+(-3~3 -1/3 ~ 1/3)
+
+Mean normalization
+
+Replace xi with xi-ui/range(max- min) or 级差
