@@ -35,5 +35,8 @@ Liner Model
 
 A* B ！= B * A
 
+commut
+
+A * (B*C) = (A*B) * C
 
 
